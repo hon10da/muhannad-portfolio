@@ -1,0 +1,6 @@
+export const specialties = [
+  { id: "design", label: "Design", filter: "Graphic Design", accent: "#c084fc", title: "Visuals with a purpose.", desc: "Branding, social media creatives and banners made in Photoshop, Illustrator and Canva, plus UI/UX training from NTI & ITIDA.", tools: ["Photoshop","Illustrator","Canva","UI/UX"], link: "#designs" },
+  { id: "frontend", label: "Frontend", filter: "Frontend", accent: "#38bdf8", title: "Interfaces that feel right.", desc: "Responsive React interfaces, such as the Voltify storefront deployed on Vercel.", tools: ["HTML","CSS","JavaScript","React"], link: "#projects" },
+  { id: "fullstack", label: "Full Stack", filter: "Full Stack", accent: "#4f6bff", title: "From database to dashboard.", desc: "MERN-stack applications and business tools like Flowtic, covering sales, accounting, HR and inventory.", tools: ["Node.js","Express","MongoDB","REST APIs"], link: "#projects" },
+  { id: "ai", label: "AI / ML", filter: "AI / ML", accent: "#a78bfa", title: "Models that support decisions.", desc: "A graduation project applying machine learning and deep learning to drug-drug interaction detection.", tools: ["Python","NumPy","Pandas","Scikit-learn","TensorFlow"], link: "#projects" },
+];
