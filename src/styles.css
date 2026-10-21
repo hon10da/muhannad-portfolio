@@ -52,3 +52,19 @@ footer{text-align:center;padding:2rem;color:var(--mute);border-top:1px solid var
 .hero-cta{margin-top:1.4rem}.tabs{margin:1.6rem 0 1rem}
 
 .boot{min-height:100svh;display:grid;place-items:center;color:var(--mute)}
+.hdr nav a.admin-link {
+  padding: .35rem .9rem;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  color: var(--ink);
+}
+
+.hdr nav a.admin-link:hover {
+  border-color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .hdr nav a.admin-link {
+    align-self: flex-start;
+  }
+}

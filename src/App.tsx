@@ -6,12 +6,11 @@ import SmartImage from "./components/SmartImage"; import Modal from "./component
 
 const nav = [["About", "#about"], ["Work", "#projects"], ["Designs", "#designs"], ["Skills", "#skills"], ["Experience", "#experience"], ["Contact", "#contact"]];
 const reveal = { initial: { opacity: 0, y: 18 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true, margin: "-60px" }, transition: { duration: .5 } };
-
 function Header() {
   const { profile } = useContent();
   const [open, setOpen] = useState(false);
   return (<header className="hdr"><a href="#top" className="mark" aria-label="Muhannad Salah, home"><span>{profile.initials}</span></a>
-    <nav className={open ? "open" : ""} aria-label="Main">{nav.map(([l, h]) => <a key={h} href={h} onClick={() => setOpen(false)}>{l}</a>)}</nav>
+    <nav className={open ? "open" : ""} aria-label="Main">{nav.map(([l, h]) => <a key={h} href={h} onClick={() => setOpen(false)}>{l}</a>)}<a href="/admin/login" className="admin-link">Admin Sign In</a></nav>
     <button className="burger" aria-expanded={open} aria-label="Toggle menu" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</button></header>);
 }
 
